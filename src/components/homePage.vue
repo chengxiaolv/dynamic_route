@@ -8,7 +8,7 @@
 export default {
   data () {
     return {
-     s:10009993
+      
     }
   },
   methods:{
