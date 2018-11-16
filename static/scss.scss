@@ -1,0 +1,5 @@
+@function pxToRem($sn) {
+    //将px转换rem。
+    //SCSS允许自定义函数
+    @return ($sn/30)*1rem;
+}
