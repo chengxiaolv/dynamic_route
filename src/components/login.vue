@@ -42,6 +42,7 @@ export default {
           type: 'success',
           duration: 1000
         });
+        this.utils.setCookie("userId","2");
         setTimeout(()=>{
           this.$router.push("/homePage");
         },1000)
@@ -64,15 +65,16 @@ export default {
           });
           return;
         }
-        if(this.psd.trim() !== 123){
+        if(this.loginName.trim() !== '123'){
           this.$message({
             showClose: true,
             message: '账户名错误',
             type: 'error',
             duration: 1000
           });
+					return
         }
-        if(this.psd.trim() !== 123){
+        if(this.psd.trim() !== '123'){
           this.$message({
             showClose: true,
             message: '密码错误',
